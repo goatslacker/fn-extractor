@@ -1,0 +1,25 @@
+{
+  "author": "Josh Perez <josh@goatslacker.com> (http://goatslacker.com)",
+  "name": "fn-extractor",
+  "description": "Extracts functions",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goatslacker/fn-extractor.git"
+  },
+  "main": "lib/parser.js",
+  "scripts": {
+    "prepublish": "cake build",
+    "test": "cake test"
+  },
+  "dependencies": {
+    "esprima": "0.9.8"
+  },
+  "devDependencies": {
+    "vows": "latest"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
