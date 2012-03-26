@@ -87,6 +87,7 @@ compile = (name, node, code) ->
   context = {}
 
   node.params.forEach (param) -> args.push param.name
+  name = name.replace /\W/g, ''
 
   wrapped = "function #{name}(#{args.join(',')}) {\n #{code.slice(node.blockStart + 1, node.end)}\n}"
 
@@ -99,6 +100,8 @@ module.exports = parse = (code) ->
   tree = esprima.parse code, { loc: true, range: true }
   functions = getFunctions tree, code
   exported = {}
-  functions.forEach (fn) -> exported[fn.name] = compile fn.name, fn, code
+  functions.filter((fn) ->
+    fn.name isnt '[Anonymous]'
+  ).forEach (fn) -> exported[fn.name] = compile fn.name, fn, code
 
   exported
