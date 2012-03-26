@@ -2,7 +2,7 @@
   "author": "Josh Perez <josh@goatslacker.com> (http://goatslacker.com)",
   "name": "fn-extractor",
   "description": "Extracts functions",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/goatslacker/fn-extractor.git"
