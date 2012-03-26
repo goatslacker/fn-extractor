@@ -16,6 +16,7 @@
     "esprima": "0.9.8"
   },
   "devDependencies": {
+    "coffee-script": "latest",
     "vows": "latest"
   },
   "optionalDependencies": {},
