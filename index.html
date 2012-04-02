@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fn-extractor by goatslacker</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Fn-extractor</h1>
+<p>Extracts functions from JavaScript code</p>
+        <p class="view"><a href="https://github.com/goatslacker/fn-extractor">View the Project on GitHub <small>goatslacker/fn-extractor</small></a></p>
+        <ul>
+          <li><a href="https://github.com/goatslacker/fn-extractor/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/goatslacker/fn-extractor/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/goatslacker/fn-extractor">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>Install</h2>
+
+<pre><code>npm install fn-extractor
+</code></pre>
+
+<h2>Example</h2>
+
+<pre><code>var extract = require('fn-extractor');
+var functions = extract('(function () { function foo() { return 1; } })');
+
+typeof functions.foo === 'function' // true
+functions.foo() === 1 // true
+</code></pre>
+
+<h2>License</h2>
+
+<p><a href="http://josh.mit-license.org">MIT</a></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/goatslacker">goatslacker</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
